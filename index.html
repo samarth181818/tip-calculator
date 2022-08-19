@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tip Calculator</h1>
+
+    <label for="bill">How much was your bill?</label>
+    <input name="bill" id="bill" type="number">
+
+    <label for="service">How was your service?</label>
+    <select name="service" id="service">
+      <option disabled selected>Choose an Opption</option>
+      <option value="30">Outstanding | 30%</option>
+      <option value="20">Best | 20%</option>
+      <option value="10">Good | 10%</option>
+      <option value="5">Average | 5%</option>
+    </select>
+
+    <label for="people">How many people are sharing the bill?</label>
+    <input name="people" id="people" type="number">
+
+    <button onclick="calculate()" id="btn">Calculate</button>
+
+    <div class="final">
+      <p>TIP AMOUNT</p>
+      <p id="tip"></p>
+      <p>each</p>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
